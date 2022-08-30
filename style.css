@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&display=swap');
+
+:root{
+    /* --color1: #FFA400; */
+    --color1: #EEF4D4;
+    --color2: #009FFD;
+    --color3: #160F29;
+    --color4: #2A2A72;
+    --colorMod: #EEF4D4;
+    --gradient: linear-gradient(25deg, var(--color4), var(--color2));
+}
+*{
+    font-family: 'Jost', sans-serif;
+    color: var(--color3);
+}
+body{
+    background: var(--gradient);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+
+}
+#container{
+    min-height: 413px;
+    height: auto;
+    width: 360px;
+    margin: 100px auto; /*auto faz margin igualar left/rigth  */
+    background: var(--color2);
+    box-shadow: 3px 8px 20px var(--color3);
+    border-radius: 20px;
+}
+.title{
+    background: var(--color3);
+    color: var(--color2);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+.tipsForm{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.formInput{
+    text-align: center;
+    border: none;
+    background: var(--colorMod);
+    max-width: 60px;
+    padding: 5px 5px 8px 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.formInput:focus{
+    outline: none;
+    background: var(--color3);
+    color: var(--color2);
+}
+.formInput::placeholder{
+    color: var(--color3);
+}
+.formSelect{
+    text-align: center;
+    border: none;
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+    background: var(--colorMod);
+    border-radius: 5px;
+}
+.formSelect:focus{
+    outline: none;
+    background: var(--color3);
+    color: var(--color2);
+}
+option{
+    background-color: var(--color2);
+}
+.formSubmit{
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    background: var(--color1);
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.formSubmit:hover{
+    transform: scale(1.05);
+    background: var(--color3);
+    color: var(--color1);
+    border-radius: 10px;
+}
+.ask{
+    font-size: 17px;
+}
+#totalTips{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}
